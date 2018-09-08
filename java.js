@@ -205,7 +205,7 @@ function students() {
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
-        cell1.innerHTML = "Row " + c;
+        cell1.innerHTML = "Standing " + c;
         cell2.innerHTML = "Students : <textarea class = 'blank students students" + c + "'></textarea>";
         cell3.innerHTML = "Name : <div class = 'autocomplete' ><input type='text' class='blank rows row" + c + "'> </div>";
         c++;
