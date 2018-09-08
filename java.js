@@ -214,7 +214,7 @@ function students() {
     var currentName = document.getElementsByClassName("rows")[c - 1];
     var currentStudents = document.getElementsByClassName("students")[c - 1];
     currentName.addEventListener("keydown", function (e) {
-        if (e.keyCode == 13 && currentName.value != "") {
+        if (e.keyCode == 13 && currentName.value != "" && document.querySelectorAll("#autocomplete-list div").length == 0) {
             if (currentStudents.value == "") {
                 currentStudents.value = currentName.value;
             }
